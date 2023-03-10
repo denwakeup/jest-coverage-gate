@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Diff Coverage Result presenter should work correctly 1`] = `
+"
+Diff coverage quality gate failed:
+
+┌────────────────────────────────────────────────────────┬─────────┬──────────┬─────────┬─────────┬─────────────┐
+│ File                                                   │ % Stmts │ % Branch │ % Funcs │ % Lines │ File status │
+├────────────────────────────────────────────────────────┼─────────┼──────────┼─────────┼─────────┼─────────────┤
+│ frontend/apps/webadmin/src/utils/parseData.ts          │ 0       │ 0        │ 80      │ 0       │ MODIFIED    │
+├────────────────────────────────────────────────────────┼─────────┼──────────┼─────────┼─────────┼─────────────┤
+│ frontend/apps/webadmin/src/components/Header/index.tsx │ 0       │ 0        │ 20      │ 0       │ ADDED       │
+└────────────────────────────────────────────────────────┴─────────┴──────────┴─────────┴─────────┴─────────────┘
+
+Diff coverage threshold for modified files:
+functions - 20%
+branches - 20%
+lines - 20%
+statements - 20%
+
+Diff coverage threshold for added files:
+functions - 50%
+branches - 50%
+lines - 50%
+statements - 50%
+"
+`;
