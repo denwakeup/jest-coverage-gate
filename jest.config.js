@@ -27,7 +27,7 @@ module.exports = {
     [
       path.resolve(__dirname, './dist/index.js'),
       {
-        since: 'origin/main',
+        since: 'origin/develop',
         modified: {
           branches: 60,
           functions: 60,
