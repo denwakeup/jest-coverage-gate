@@ -27,7 +27,7 @@ describe('Git Changed Files getter', () => {
     expect(execaSpy).toHaveBeenLastCalledWith('git', [
       'diff',
       '--name-status',
-      'develop...HEAD',
+      'develop',
       '--',
       rootDirMock,
     ]);

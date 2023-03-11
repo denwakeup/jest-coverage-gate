@@ -14,13 +14,12 @@ export const getGitChangedFiles = ({
   rootDir,
   since,
 }: IParams): IDiffCoverageFileMap => {
-  const passedSince = since.includes('...') ? since : `${since}...HEAD`;
   const rootPath = getGitRoot({ rootDir });
 
   const { stdout } = sync('git', [
     'diff',
     '--name-status',
-    passedSince,
+    since,
     `--`,
     rootDir,
   ]);
