@@ -1,6 +1,6 @@
 {
   "name": "jest-coverage-gate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jest coverage gate",
   "main": "./dist/index.js",
   "sideEffects": false,

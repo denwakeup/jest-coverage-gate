@@ -1,15 +1,24 @@
 # Jest Coverage Gate
 
-Проверка покрытия измененных и добавленных файлов.
+Checking the coverage of changed and added files
 
-## Основные особенности:
+<img alt="example" src="./docs/media/example.png" width="800">
+<br  />
 
-- Раздельные настройки `coverage threshold` для новых и измененных файлов
-- Возможность указать `target` ветку относительно которой будет вычисляться `diff`
+## Features
 
-## Как использовать?
+- Separate `coverage threshold` settings for new and changed files
+- Ability to specify `target` branch relative to which `diff` will be calculated
 
-1. Добавить `jest-coverage-gate` в качестве репортера в `jest config`:
+## Usage
+
+1. Install:
+
+```shell
+npm i jest-coverage-gate -D
+```
+
+2. Add `jest-coverage-gate` to the `coverageReporters` list of your Jest configuration:
 
 ```js
 {
@@ -18,7 +27,7 @@
     [
       'jest-coverage-gate',
       {
-        since: 'develop',
+        since: 'develop', // origin/develop, OR origin/develop...HEAD, OR commitHash...commitHash
         modified: {
           branches: 50,
           functions: 50,
@@ -37,8 +46,8 @@
 }
 ```
 
-2. Запустить jest с опцией coverage
+3. Run Jest:
 
-```bash
+```shell
 jest --coverage
 ```
