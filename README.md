@@ -1,5 +1,7 @@
 # Jest Coverage Gate
 
+[![npm](https://img.shields.io/npm/v/jest-coverage-gate)](https://www.npmjs.com/package/jest-coverage-gate)
+
 Checking the coverage of changed and added files
 
 <img alt="example" src="./docs/media/example.png" width="800">
