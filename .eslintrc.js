@@ -22,6 +22,7 @@ module.exports = {
     },
   },
   rules: {
+    'no-console': 'error',
     'spaced-comment': [
       'error',
       'always',

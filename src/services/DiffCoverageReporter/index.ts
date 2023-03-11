@@ -3,7 +3,6 @@ import type { CoverageSummary } from 'istanbul-lib-coverage';
 
 import { ECoverageCheckStatus } from '../../constants/coverageGate.constants';
 import { IDiffCoverageThreshold } from '../../interfaces/threshold.interfaces';
-import { IDiffCoverageCheckResult } from '../../interfaces/coverage.interfaces';
 import { CoverageGate } from '../CoverageGate';
 import { DiffCoverageFiles } from '../DiffCoverageFiles';
 
@@ -63,6 +62,7 @@ export class DiffCoverageReporter implements ReportBase {
           const result = coverageGate.check({ files });
 
           if (result.status === ECoverageCheckStatus.ERROR) {
+            // eslint-disable-next-line no-console
             console.log(
               presentDiffCoverageResult({
                 result,

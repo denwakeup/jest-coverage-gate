@@ -1,6 +1,6 @@
 {
   "name": "jest-coverage-gate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Jest coverage gate",
   "main": "./dist/index.js",
   "sideEffects": false,
@@ -28,6 +28,7 @@
     "build": "npm run clean:build && tsc --project tsconfig.build.json",
     "clean:build": "rimraf ./dist",
     "lint": "eslint \"src/**/*.{ts,js}\" --max-warnings=0",
+    "validate": "npm run lint && npm run types:check",
     "reinstall": "npx rimraf ./node_modules && npm i",
     "test": "jest",
     "test:watch": "jest --watch",
